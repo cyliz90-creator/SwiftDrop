@@ -3,21 +3,14 @@ SwiftDrop
 A simple CLI WiFi file transfer tool.
 
 Author: tPowdel
-Version: 0.1.0
 """
 
-APP_NAME = "SwiftDrop"
-VERSION = "0.1.0"
-
-def print_banner():
-    """ Display the application banner."""
-    print("=" * 50)
-    print (f"{APP_NAME} v{VERSION}")
-    print("CLI WiFi File Transfer")
-    print("=" * 50)
+from swiftdrop.banner import print_banner
+from swiftdrop.cli import run_cli
 
 def main():
     print_banner()
+    run_cli()
 
 if __name__ == "__main__":
     main()
